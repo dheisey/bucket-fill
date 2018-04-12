@@ -15,6 +15,7 @@
 /*jslint browser: true */
 /*global G_vmlCanvasManager, $ */
 
+
 var paintBucketApp = (function () {
 
 	"use strict";
@@ -22,22 +23,22 @@ var paintBucketApp = (function () {
 	var context,
 		canvasWidth = 690,
 		canvasHeight = 805,
-		color1 = { // #d31145
-			r: 211,
-			g: 17,
-			b: 69
-		},
-		color2 = { // #6d0823
-			r: 109,
-			g: 8,
-			b: 35
-		},
-		color3 = { // #fea0a0
+		color1 = { //peach
 			r: 254,
 			g: 160,
 			b: 160
 		},
-		color4 = { // #258e0a
+		color2 = { //brown
+			r: 152,
+			g: 105,
+			b: 40
+		},
+		color3 = { //red
+			r: 211,
+			g: 17,
+			b: 69
+		},
+		color4 = { //green
 			r: 37,
 			g: 142,
 			b: 10
@@ -99,9 +100,9 @@ var paintBucketApp = (function () {
 		swatchStartY = 19,
 		swatchImageWidth = 93,
 		swatchImageHeight = 46,
-		drawingAreaX = 111,
+		drawingAreaX = 81,
 		drawingAreaY = 11,
-		drawingAreaWidth = 440,
+		drawingAreaWidth = 430,
 		drawingAreaHeight = 768,
 		colorLayerData,
 		outlineLayerData,
@@ -150,7 +151,7 @@ var paintBucketApp = (function () {
 			context.drawImage(backgroundImage, 0, 0, canvasWidth, canvasHeight);
 
 			// Draw the color swatches
-			locX = 52;
+			locX = 19;
 			locY = 19;
 			drawColorSwatch(color1, locX, locY);
 
